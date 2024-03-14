@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Level 3</title>
+</head>
+<body>
+
+</body>
+  <script>
+          var validInput = false;
+          while (!validInput){
+          var userInput = prompt("Masukkan sebuah angka genap bernilai lebih dari 2: ")
+
+            if (userInput === null){
+              break;
+            }
+            var number = parseInt(userInput);
+
+            if (!isNaN(number)&& number % 2 === 0 && number >2){
+              validInput=true;
+            } else{
+              alert("Masukkan sebuah angka genap bernilai lebih dari 2!");
+            }
+          }
+  </script>
+</html>
